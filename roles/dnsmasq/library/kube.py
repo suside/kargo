@@ -33,7 +33,7 @@ options:
     required: false
     default: null
     description:
-      - The resource to perform an action on. pods (po), replicationControllers (rc), services (svc)
+      - The resource to perform an action on. pods (po), replicationControllers (rc), services (svc), etc.
   label:
     required: false
     default: null

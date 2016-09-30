@@ -1,3 +1,10 @@
+---
 dependencies:
+  - role: download
+    file: "{{ downloads.netcheck_server }}"
+  - role: download
+    file: "{{ downloads.netcheck_agent }}"
+  - role: download
+    file: "{{ downloads.netcheck_kubectl }}"
   - {role: kubernetes-apps/ansible, tags: apps}
   - {role: kubernetes-apps/kpm, tags: [apps, kpm]}

@@ -50,3 +50,9 @@ should_pod_be_in_expected_subnet() {
 
   assertion__status_code_is_success $?
 }
+
+should_resolve_cluster_dns() {
+  ansible-playbook -i inventory.ini -s ${private_key} testcases/040_check-network-adv.yml -vv
+
+  assertion__status_code_is_success $?
+}
